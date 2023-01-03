@@ -1,0 +1,286 @@
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+
+.corpo{
+    background: rgb(154,44,94);
+	background: linear-gradient(117deg, rgba(154,44,94,1) 0%, rgba(43,44,94,1) 59%, rgba(43,44,94,1) 100%) no-repeat fixed;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    min-height: 90vh;
+    min-width: 100vw;
+  }
+  
+  .mainCD {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .mainCD h2 {
+      color: #ffffff;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      margin-top:1rem;
+      font-weight: 800;
+  }
+  
+  h4{
+    color: white;   
+  }
+
+
+  .mainCD form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+  }
+  
+  .mainCD form ::placeholder{
+      color: #a5a5a5;
+  }
+  
+  .mainCD form label {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+  }
+  
+  .mainCD form input, select{
+      width: 30vw;
+      border: 2px solid rgb(163, 163, 163,2);
+      border-radius: 6px;
+      outline: 0;
+      font-size: 1rem;
+      color: #4d5770;
+      padding: 7px 5px;
+      background: transparent;
+      transition: border-color 0.2s;
+  }
+  .mainCD form fieldset input{
+    color: #a5a5a5;
+    width: 10px;
+    margin: 1vw;
+  }
+  
+  
+  .mainCD form input[type="submit"] {
+      cursor: pointer;
+      width: 30%;
+      margin-top: 4rem;
+      border: none;
+      border-radius: 2px;
+      background: linear-gradient(117deg, rgba(154,44,94,1) 0%, rgba(43,44,94,1) 59%, rgb(27, 27, 66) 100%);
+      color: white;
+      font-size: 1rem;
+      transition: all .3s ease-in-out;
+      padding: 10px 0;
+      float: right;
+  }
+  
+  .mainCD form input[type="submit"]:hover {
+      background: #000000;
+  }
+  
+  section.images {
+      width: 50vw;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 4rem;    
+  }
+  
+  section.images img {
+      width: 90%;
+      margin-bottom: -10%;
+      z-index: 3;
+  
+  }
+  
+  section.images .circle {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, #E8CBC0, #0099ff);
+      clip-path: circle(40% at right 80%);
+      z-index: 1;
+  }
+  
+  section.images .circle2 {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, #E8CBC0, #e42727);
+      clip-path: circle(40% at right 80%);
+      z-index: 1;
+  }
+  
+  .stepfoto{
+      text-align: center;
+      width: 45vw;
+  
+  }
+  
+  .stepfoto h1{
+    color: #0099ff;
+    font-family: "poppins";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top:1rem;
+  }
+  
+  .stepfoto span{
+      font-size: 1rem;
+  }
+  
+  .stepfoto p{
+      font-size: 0.9rem;
+      margin-top: 5%;
+      margin-bottom:5%;
+  }
+  
+  .stepfoto #arquivo{
+      width: 50vw;
+      border: 0;
+      border-bottom: 2px solid #0099ff;;
+      outline: 0;
+      font-size: 1rem;
+      color: #4d5770;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+  }
+
+
+  
+  .btnnp{
+      display: inline-block;
+      width: 50%;
+  }
+  
+  #next,#next1{
+      cursor: pointer;
+      width: 30%;
+      margin-top: 2rem;
+      border: none;
+      border-radius: 2px;
+      background: rgb(154,44,94);
+      color: white;
+      font-size: 1rem;
+      transition: all .3s ease-in-out;
+      padding: 10px 0;
+      float: right;
+  }
+  #prev,#prev1{
+      cursor: pointer;
+      width: 30%;
+      margin-top: 2rem;
+      border: none;
+      border-radius: 2px;
+      background: rgb(154,44,94);
+      color: white;
+      font-size: 1rem;
+      transition: all .3s ease-in-out;
+      padding: 10px 0;
+      float: left;
+  }
+  
+  #can,#can1{
+      cursor: pointer;
+      width: 30%;
+      margin-top: 4rem;
+      margin-left: 3%;
+      border: none;
+      border-radius: 2px;
+      background: linear-gradient(286deg, #ffffff, #ffffff);
+      color: #0099ff;
+      font-size: 1rem;
+      transition: all .3s ease-in-out;
+      padding: 10px 0;
+      float: left;
+      text-decoration: none;
+      text-align: center;
+      box-shadow:1px 1px 4px 1px rgb(175, 175, 175);
+  }
+  
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+      section.images img {
+          width: 110%;
+      }
+  
+  }
+  
+  @media only screen and (max-width: 900px) {
+      section.images {
+          display: none;
+          visibility: hidden;
+      }
+  
+      .mainCD {
+          width: 200vw;
+      }
+      .mainCD form input, select{
+          width: 50vw;
+      }
+  }
+  
+  @media only screen and (max-width: 450px) {
+      .mainCD h1 {
+          font-size: 2rem;
+      }
+      .mainCD{
+          width: 50vw;
+      }
+      .mainCD form label span, .mainCD form input[type="submit"] {
+          font-size: 1rem;
+      }
+      .mainCD form input, select{
+          width: 50vw;
+      }
+  }
+
+  .btnInlcuir{
+    width: 90px;
+    border-radius: 6px;
+    border: 0;
+    background: linear-gradient(286deg, #ffffff, #ffffff);
+    border-bottom: 10px;
+  }
+
+  .btnInlcuir:hover{
+    background: #e1dede60;
+  }
+
+  .boxModel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e1dede12 ;
+    border-radius: 3px;
+  }
+
+  #div form label{
+    display: block;
+    padding: 3px;
+  }
+  
+  #div form input{
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width:100%;
+  }
+  #div form{
+  margin-bottom:10px;
+  }
+
